@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: smartreader-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: smartreader_db
+      POSTGRES_USER: smartreader_user
+      POSTGRES_PASSWORD: smartreader_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+    driver: local
