@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: smart-reader
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smartreader_db
+    username: smartreader_user
+    password: smartreader_password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.yml
