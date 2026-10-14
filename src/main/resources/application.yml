@@ -24,5 +24,5 @@ application:
   name: smart-reader
   security:
     jwt:
-      secret-key: bQeThWmZq4t7w!z$C&F)J@NcRfUjXn2r5u8x/A?D*G-KaPdSgVkYp3s6v9y$B>E)
+      secret-key: bQeThWmZq4t7w=z+CyFuJkNcRfUjXn2r5u8x/A+DiG=KaPdSgVkYp3s6v9ygB/El
       expiration: 86400000
