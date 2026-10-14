@@ -19,3 +19,10 @@ spring:
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.yml
+
+application:
+  name: smart-reader
+  security:
+    jwt:
+      secret-key: bQeThWmZq4t7w!z$C&F)J@NcRfUjXn2r5u8x/A?D*G-KaPdSgVkYp3s6v9y$B>E)
+      expiration: 86400000
