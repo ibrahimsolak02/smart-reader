@@ -17,6 +17,7 @@ public class CorsConfig {
 
         configuration.setAllowedOrigins(List.of("http://localhost:4200"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+        // Tüm header'ları kabul ediyoruz
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
 
